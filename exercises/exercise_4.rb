@@ -17,8 +17,9 @@ railtown = Store.create! :name => 'Wings and Horns', :annual_revenue => 430000, 
     puts store.annual_revenue
 end
 
-@womens_under_aMilli = Store.wheere("womens_apparel = true && annual_revenue < 1000000").find_each do |store|
-    puts store.nameputs store.and
+@womens_under_aMilli = Store.where("womens_apparel = true && annual_revenue < 1000000").find_each do |store|
+    puts store.name
+    puts store.annual_revenue
 end
 
 
